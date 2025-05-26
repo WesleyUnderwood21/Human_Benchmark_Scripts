@@ -11,6 +11,7 @@ import re
 
 #region=(300,230,1300,750)
 
+#replace with your own path
 pytesseract.pytesseract.tesseract_cmd = r'C:\Users\clano_kvwtbnf\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 
 max = 4
@@ -38,6 +39,7 @@ def find_number_pos(max_num):
 
     pic = thresh
 
+    #replace with your own path
     cv2.imwrite(r"C:\Users\clano_kvwtbnf\Desktop\python fun\chimps.png", pic)
 
     #text = pytesseract.image_to_string(pic, config='--psm 6')
